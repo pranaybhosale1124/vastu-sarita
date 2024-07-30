@@ -1,0 +1,214 @@
+body {
+    font-family: serif, sans-serif !important;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* background-image: url('./background.jfif'); */
+}
+
+section {
+    margin: 1%;
+    padding: 1.5%;
+    background: #fff;
+    border-radius: 5px;
+    /* background-image: url('./background.jfif'); */
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: #333;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.review-card img,
+.review-card .bi-person-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review-card .bi-person-circle {
+    font-size: 80px;
+    color: #6c757d;
+}
+
+.carousel-control-btn-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative !important;
+    width: 3vw !important;
+    height: 3vw !important;
+    min-width: 20px;
+    min-height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.review-card i.bi-star-fill,
+.review-card i.bi-star {
+    color: #ffc107; /* Bootstrap warning color for stars */
+}
+
+.bi {
+    padding: 0.25vw !important;
+}
+
+footer {
+    background-color: #000;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer h5 {
+    /* color: #333; */
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.carousel-indicators li{
+    background-color: #000 !important;
+    /* opacity: 0.3 !important; */
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin: 25px 0px 0px 0px;
+}
+
+.service-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.service-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.service-card .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 75px; 
+}
+
+.service-card .expand-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    display: block;
+    font-size: small;
+    color: blue;
+}
+
+.service-card.expanded .card-text {
+    overflow: visible;
+    text-overflow: clip;
+    display: block;
+    -webkit-line-clamp: none;
+    line-clamp: none;
+    -webkit-box-orient: horizontal !important;
+    max-height: max-content !important;
+}
+
+.service-card.expanded .expand-icon::before {
+    content: 'Show Less';
+}
+
+.service-card.collapsed .expand-icon::before {
+    content: 'Show More';
+}
+
+.card-body{
+    text-align: left;
+}
+
+.tip-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 300px; */
+    text-align: center;
+}
+
+.tip-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tip-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.highlight {
+    animation: highlight-animation 3s forwards;
+}
+
+@keyframes highlight-animation {
+    0% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: transparent;
+    }
+}

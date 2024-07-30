@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VastuSarita</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- Services Section -->
+    <section id="services" class="my-4">
+        <header class="p-3 d-flex justify-content-between align-items-center">
+            <h1 class="m-0">VastuSarita</h1>
+            <button class="btn btn-primary" onclick="scrollToFooter()">
+                Contact Us
+            </button>
+        </header>
+        <div>
+            <h5>Who we Are</h5>
+            <p>Expert In Vedic Vastu is a honest, trustworthy person who assures 100% Result because of my years of experience in this field. And I focuses on resolving people's home issues without any harm to home giving people the peace they always wish for. I am an expert in correct mapping of directions, works best on colour therapy and a professional in vastu programming.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card service-card collapsed" id="serviceCard1">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Vastu</h5>
+                        <p class="card-text">Optimize the energy flow in your home for better health, wealth, and
+                            harmony. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor metus ut erat
+                            facilisis, ut aliquet quam gravida. Duis varius vehicula metus, ac condimentum arcu
+                            convallis ut.Optimize the energy flow in your home for better health, wealth, and harmony.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor metus ut erat
+                            facilisis, ut aliquet quam gravida. Duis varius vehicula metus, ac condimentum arcu
+                            convallis ut</p>
+                        <div class="expand-icon" onclick="toggleCard('serviceCard1')"></div>
+                    </div>
+                </div>
+                <div class="card service-card collapsed" id="serviceCard3">
+                    <div class="card-body">
+                        <h5 class="card-title">Location Consultation</h5>
+                        <p class="card-text">Choose the best location for your home or office based on Vastu Shastra.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor metus ut erat
+                            facilisis, ut aliquet quam gravida. Duis varius vehicula metus, ac condimentum arcu
+                            convallis ut.</p>
+                        <div class="expand-icon" onclick="toggleCard('serviceCard3')"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card service-card collapsed" id="serviceCard2">
+                    <div class="card-body">
+                        <h5 class="card-title">Building Vastu</h5>
+                        <p class="card-text">Ensure your building is designed and constructed according to Vastu
+                            principles for maximum benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Cras auctor metus ut erat facilisis, ut aliquet quam gravida. Duis varius vehicula metus, ac
+                            condimentum arcu convallis ut.</p>
+                        <div class="expand-icon" onclick="toggleCard('serviceCard2')"></div>
+                    </div>
+                </div>
+                <div class="card service-card collapsed" id="serviceCard4">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Decor</h5>
+                        <p class="card-text">Enhance your living space with Vastu-compliant decor for a harmonious
+                            environment. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor metus ut
+                            erat facilisis, ut aliquet quam gravida. Duis varius vehicula metus, ac condimentum arcu
+                            convallis ut.</p>
+                        <div class="expand-icon" onclick="toggleCard('serviceCard4')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+                    <div class="tip-card" id="tipCard" style="height: 100%; text-align: left; width: 100%;">
+                        <h2 id="tipHeading">Tip Heading</h2>
+                        <p id="tipDescription">Tip description goes here...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselReviews" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" id="carousel-indicators">
+                        <!-- Indicators will be inserted here -->
+                    </ol>
+                    <div class="carousel-inner" id="review-list">
+                        <!-- Reviews will be inserted here -->
+                    </div>
+                    <div class="carousel-control-btn-container" style="left: 0;">
+                        <button class="carousel-control-prev rounded-circle" type="button"
+                            data-target="#carouselReviews" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                    </div>
+                    <div class="carousel-control-btn-container" style="right: 0;">
+                        <button class="carousel-control-next rounded-circle" type="button"
+                            data-target="#carouselReviews" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="my-4" style="margin: 0px !important;">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Address: 3rd Floor, Punawala building(Shetye, 46, Jagannathrao Bhatankar Marg, Parel, Mumbai,
+                    Maharashtra 400012</p>
+            </div>
+            <div class="col-md-4" id="contact-info">
+                <h5>Contact Us</h5>
+                <!-- wa.me/91wa.me/919152333157 -->
+
+                <p>WhatsApp: <a href="http://wa.me/919152333157" target="_blank">+91-9152333157</a></p>
+                <p>Phone: <a href="tel:+919152333157" target="_blank">+91-9152333157</a></p>
+                <p>Email: <a href="mailto:admin@vastusarita.in" target="_blank">admin@vastusarita.in</a></p>
+            </div>
+            <div class="col-md-4">
+
+                <p>Follow Us <a href="https://www.instagram.com/vastusarita?igsh=dWY5dTBoeG80eDRn" target="_blank"><i
+                            class="bi bi-instagram"></i> Instagram</a></p>
+                <p>Location <a href="https://g.co/kgs/qBsvoum" target="_blank"><i class="bi bi-geo-alt"></i> Google
+                        Maps</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="test.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
