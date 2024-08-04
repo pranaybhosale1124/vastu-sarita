@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <p style='width:fit-content'>${stars}</p>
                         </div>
                     </div>
-                    <p style="text-align:justify">${review.review}</p>
+                    <p style="text-align:justify">${review?.review?.length>0?'“'+review.review+'”':''}</p>
                 </div>
             `;
             reviewListElement.appendChild(reviewElement);
