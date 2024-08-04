@@ -46,12 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Function to display random tip
-    function displayRandomTip() {
-        let randomIndex = Math.floor(Math.random() * tips.length);
-        let randomTip = tips[randomIndex];
-        document.getElementById('tipHeading').innerText = randomTip.heading;
-        document.getElementById('tipDescription').innerText = randomTip.description;
-    }
+    // function displayRandomTip() {
+    //     let randomIndex = Math.floor(Math.random() * tips.length);
+    //     let randomTip = tips[randomIndex];
+    //     document.getElementById('tipHeading').innerText = randomTip.heading;
+    //     document.getElementById('tipDescription').innerText = randomTip.description;
+    // }
 
     // Array of static tips
     const tips = [
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { heading: "Office Vastu Tip", description: "Place the desk facing north to enhance concentration." },
     ];
 
-    window.onload = displayRandomTip;
+    // window.onload = displayRandomTip;
 
     // Function to update reviews section
     async function updateReviewsSection() {

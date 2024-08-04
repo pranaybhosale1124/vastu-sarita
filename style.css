@@ -1,10 +1,19 @@
 body {
-    font-family: serif, sans-serif !important;
+    /* font-family: serif, sans-serif !important; */
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     /* background-image: url('./background.jfif'); */
+}
+
+.col-md-6{
+    padding: 0px !important;
+}
+
+.contact-us-btn{
+    background-color: #FF7900 !important;
+    color: #FFFF !important;
 }
 
 section {
@@ -25,13 +34,19 @@ h2 {
     justify-content: center;
     align-items: center;
     min-height: 200px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    background: #FFFF;
+    border: none;
     border-radius: 5px;
     padding: 20px;
+
+}
+
+.col-md-4{
+    background-color: #000;
 }
 
 .review-card {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,6 +125,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.carousel-indicators{
+    position: relative !important;
+}
+
 .carousel-indicators li{
     background-color: #000 !important;
     /* opacity: 0.3 !important; */
@@ -123,6 +142,12 @@ footer a:hover {
     text-align: center;
     position: relative;
     margin: 25px 0px 0px 0px;
+}
+
+.service-card{
+    background-color: #000 !important;
+    max-width: 600px !important;
+    color: #FFFF;
 }
 
 .service-card .card-body {
@@ -155,7 +180,7 @@ footer a:hover {
     display: none;
     display: block;
     font-size: small;
-    color: blue;
+    color: #FF7900;
 }
 
 .service-card.expanded .card-text {
@@ -206,9 +231,38 @@ footer a:hover {
 
 @keyframes highlight-animation {
     0% {
-        background-color: yellow;
+        background-color: #FF7900;
     }
     100% {
         background-color: transparent;
     }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+.col-md-8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.col-md-4{
+    padding: 0px !important;
+}
+
+.row{
+    margin: 10px 0px;
+}
+
+.about-text{
+    color: #C0C0C0;
 }
