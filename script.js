@@ -2,18 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to fetch reviews from Google Places API
     async function fetchGoogleReviews() {
         try {
-            const reviewsUrl = 'https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJGciKVSLJ5zsRa_IH1rPtA8o&key=AIzaSyBFvoB1jo_HOnv6barlamRHbEYnEM07F2A';
-            const response = await fetch(reviewsUrl);
-            console.log('response:::', response);
-            const data = await response.json();
-            return data.result.reviews.map(review => ({
-                rating: review.rating,
-                review: review.text,
-                name: review.author_name,
-                profile: review.profile_photo_url || ''
-            }));
-        } catch (err) {
-            console.log(err);
+            const response = await fetch('http://localhost:8000');
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const reviews = await response.json();
+            console.log(reviews);
+            return reviews
+          } catch (error) {
+            console.error('Error fetching reviews:', error);
             return [
                 {
                     "name": "Sangeeta Mhadeshwar",
@@ -28,21 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     "rating": 5,
                     "relative_time_description": "2 months ago",
                     "review": "I have consulted Sarita Vastu and got very good and positive results."
-                },
-                {
-                    "name": "Anushri Pangam",
-                    "profile": "https://lh3.googleusercontent.com/a/ACg8ocKLc-PC8qFoXWFfJ273dPVEPru6jA5yX3B9xc08V2gUVFhnhw=s128-c0x00000000-cc-rp-mo",
-                    "rating": 5,
-                    "review": "For better results of vastu effects,  prefer SaritaVastu\nMost recommended !"
-                },
-                {
-                    "name": "Kiran Karandikar",
-                    "profile": "https://lh3.googleusercontent.com/a-/ALV-UjVFy-12iHwciTO4UdjCKPbZIP0YmZuHdN5il4wQo4rF2TSxFp4HKA=s128-c0x00000000-cc-rp-mo-ba2",
-                    "rating": 5,
-                    "review": ""
                 }
             ]
-        }
+          }
     }
 
     // Function to display random tip
