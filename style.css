@@ -117,7 +117,7 @@ footer h5 {
 }
 
 footer a {
-    color: #007bff;
+    color: #FF7900;
     text-decoration: none;
 }
 
@@ -170,6 +170,7 @@ footer a:hover {
     line-clamp: 3;
     -webkit-box-orient: vertical;
     max-height: 75px; 
+    text-align: justify;
 }
 
 .service-card .expand-icon {
@@ -191,6 +192,7 @@ footer a:hover {
     line-clamp: none;
     -webkit-box-orient: horizontal !important;
     max-height: max-content !important;
+    text-align: justify;
 }
 
 .service-card.expanded .expand-icon::before {
