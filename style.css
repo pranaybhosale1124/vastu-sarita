@@ -122,6 +122,7 @@ footer a {
 }
 
 footer a:hover {
+    color: #FF7900;
     text-decoration: underline;
 }
 
